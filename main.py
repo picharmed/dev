@@ -5,10 +5,14 @@ __version__ = "0.1.1"
 def bonjour():
     click.echo("guten tag")
 
+@click.command("bonjour")
+def bonjour():
+    click.echo("bonjour monde")
+
 @click.command("version")
 def version():
     click.echo(__version__)
-
+    
 @click.command("hello")
 def hello():
     click.echo("Hello, World!")
